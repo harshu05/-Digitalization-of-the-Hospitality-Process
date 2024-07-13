@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitality Process Digitalization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .upload-section, .output-section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Digitalization of Hospitality Process</h1>
+        <div class="upload-section">
+            <h2>Upload CSV Files</h2>
+            <input type="file" id="groupFile" accept=".csv">
+            <input type="file" id="hostelFile" accept=".csv">
+            <button onclick="processFiles()">Upload and Process</button>
+        </div>
+        <div class="output-section">
+            <h2>Room Allocation</h2>
+            <table id="outputTable">
+                <thead>
+                    <tr>
+                        <th>Group ID</th>
+                        <th>Hostel Name</th>
+                        <th>Room Number</th>
+                        <th>Members Allocated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <button onclick="downloadCSV()">Download CSV</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
