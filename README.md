@@ -1,1 +1,1 @@
-# -Digitalization-of-the-Hospitality-Process
+Digitalization of the Hospitality Process
